@@ -24,8 +24,10 @@ vim.g.maplocalleader = "\\"
 local plugins = {
     require("plugins.all"),
     require("plugins.telescope"),
-    require("plugins.noice"),
+    require("plugins.notify"),
     require("plugins.treesitter"),
+    require("plugins.which-key"),
+    require("plugins.noice"),
 }
 
 require("lazy").setup(plugins)
