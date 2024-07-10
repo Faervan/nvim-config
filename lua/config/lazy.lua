@@ -22,12 +22,18 @@ vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
 
 local plugins = {
-    require("plugins.all"),
+    require("plugins.colorscheme"),
     require("plugins.telescope"),
     require("plugins.notify"),
     require("plugins.treesitter"),
     require("plugins.which-key"),
     require("plugins.noice"),
+    require("plugins.suda"),
+    require("plugins.lspconfig"),
+    require("plugins.cmp"),
+    require("plugins.open-link"),
+    require("plugins.flash"),
+    require("plugins.autoclose"),
 }
 
 require("lazy").setup(plugins)
