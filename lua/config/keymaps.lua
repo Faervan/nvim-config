@@ -35,3 +35,7 @@ vim.keymap.set('v', '<Tab>', '>gv', opts)
 -- --------------
 
 vim .keymap.set('c', 'w!!', ':SudaWrite')
+
+-- Don't replace clipbord content when pasting in visual selection
+-- see https://www.reddit.com/r/neovim/comments/v7s1ts/how_do_i_avoid_replacing_the_content_of_my/
+vim.keymap.set("x", "p", function() return 'pgv"' .. vim.v.register .. "y" end, { remap = false, expr = true })
