@@ -34,6 +34,7 @@ local plugins = {
     require("plugins.open-link"),
     require("plugins.flash"),
     require("plugins.autoclose"),
+    require("plugins.presence"),
 }
 
 require("lazy").setup(plugins)
