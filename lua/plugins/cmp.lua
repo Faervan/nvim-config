@@ -110,7 +110,7 @@ return {
             "cssls",
             "html",
             "lemminx",
-            "ltex",
+            --"ltex",
             "rust_analyzer",
             "solargraph",
             "somesass_ls",

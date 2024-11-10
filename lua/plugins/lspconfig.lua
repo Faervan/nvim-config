@@ -30,7 +30,7 @@ return {
                 "cssls",
                 "html",
                 "lemminx",
-                "ltex",
+                --"ltex",
                 "rust_analyzer",
                 "solargraph",
                 "somesass_ls",
@@ -47,7 +47,14 @@ return {
         require"lspconfig".cssls.setup{}
         require"lspconfig".html.setup{}
         require"lspconfig".lemminx.setup{}
-        require"lspconfig".ltex.setup{}
+        --[[require"lspconfig".ltex.setup{
+            settings = {
+                ltex = {
+                    --language = "de-DE"
+                    enabled = false
+                },
+            },
+        }]]--
         require"lspconfig".rust_analyzer.setup{}
         require"lspconfig".solargraph.setup{}
         require"lspconfig".somesass_ls.setup{}
